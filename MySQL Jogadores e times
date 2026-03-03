@@ -1,0 +1,216 @@
+create table jogador (
+id int auto_increment primary key unique,
+nome varchar(245) not null,
+numero_camisa int not null unique,
+altura float not null,
+data_de_nascimento date not null
+);
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Messi" , 
+"12",
+"1.53",
+"1984/10/21");
+
+insert into jogador(nome, numero_camisa, altura, data_de_nascimento) values (
+"Di Maria",
+"24",
+"1.93",
+"1972/04/15"
+);
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Cristiano Ronaldo",
+"7",
+"1.91",
+"1969/02/03");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Thiago Silva",
+"29"
+"1.87"
+"1968/02/21");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Ronaldinho Gaucho",
+"10"
+"1.79"
+"1993/04/30");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Hulk",
+"8"
+"1.82"
+"1985/01/10");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Suarez",
+"9"
+"1.90"
+"1996/10/25");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Bentley",
+"19"
+"1.95"
+"1994/01/21");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Pedro Souto",
+"25"
+"1.84"
+"1989/05/05");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Gabriel Santos",
+"20"
+"1.75"
+"1982/06/10");
+
+
+select * from jogador;
+
+drop table jogador;
+alter table jogador modify id int auto_increment;
+describe jogador;
+show tables;
+
+create table jogador (
+id int auto_increment primary key unique,
+nome varchar(245) not null,
+numero_camisa int not null unique,
+altura float not null,
+data_de_nascimento date not null
+);
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Messi" , 
+"12",
+"1.53",
+"1984/10/21");
+
+insert into jogador(nome, numero_camisa, altura, data_de_nascimento) values (
+"Di Maria",
+"24",
+"1.93",
+"1972/04/15"
+);
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Cristiano Ronaldo",
+"7",
+"1.91",
+"1969/02/03");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Thiago Silva",
+"29",
+"1.87",
+"1968/02/21");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Ronaldinho Gaucho",
+"10",
+"1.79",
+"1993/04/30");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Hulk",
+"8",
+"1.82",
+"1985/01/10");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Suarez",
+"9",
+"1.90",
+"1996/10/25");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Bentley",
+"19",
+"1.95",
+"1994/01/21");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Pedro Souto",
+"25",
+"1.84",
+"1989/05/05");
+
+insert into jogador (nome, numero_camisa, altura, data_de_nascimento) values (
+"Gabriel Santos",
+"20",
+"1.75",
+"1982/06/10");
+
+
+select * from jogador;
+
+truncate table jogador;
+
+alter table jogador modify numero_camisa varchar(3);
+alter table jogador add unique (numero_camisa);
+alter table jogador change data_de_nascimento data_nsc date;
+
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Messi" , 
+"12",
+"1.53",
+"1984/10/21");
+
+insert into jogador(nome, numero_camisa, altura, data_nsc) values (
+"Di Maria",
+"24",
+"1.93",
+"1972/04/15"
+);
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Cristiano Ronaldo",
+"7",
+"1.91",
+"1969/02/03");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Thiago Silva",
+"29",
+"1.87",
+"1968/02/21");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Ronaldinho Gaucho",
+"10",
+"1.79",
+"1993/04/30");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Hulk",
+"8",
+"1.82",
+"1985/01/10");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Suarez",
+"9",
+"1.90",
+"1996/10/25");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Bentley",
+"19",
+"1.95",
+"1994/01/21");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Pedro Souto",
+"25",
+"1.84",
+"1989/05/05");
+
+insert into jogador (nome, numero_camisa, altura, data_nsc) values (
+"Gabriel Santos",
+"20",
+"1.75",
+"1982/06/10");
